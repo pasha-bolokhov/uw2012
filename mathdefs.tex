@@ -1,0 +1,191 @@
+\newcommand{\nfour}{${\cal N}=4\;$}
+\newcommand{\ntwo}{${\mathcal N}=2\;$}
+\newcommand{\none}{${\mathcal N}=1\,$}
+\newcommand{\ntt}{${\mathcal N}=(2,2)\,$}
+\newcommand{\nzt}{${\mathcal N}=(0,2)\,$}
+\newcommand{\cpn}{CP$^{(N-1)}\,$}
+\newcommand{\ca}{{\mathcal A}}
+\newcommand{\cell}{{\mathcal L}}
+\newcommand{\cw}{{\mathcal W}}
+\newcommand{\cs}{{\mathcal S}}
+\newcommand{\vp}{\varphi}
+\newcommand{\pt}{\partial}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\gs}{g^{2}}
+\newcommand{\zn}{$Z_N$}
+\newcommand{\cd}{${\mathcal D}$}
+\newcommand{\cde}{{\mathcal D}}
+\newcommand{\cf}{${\mathcal F}$}
+\newcommand{\cfe}{{\mathcal F}}
+
+\newcommand{\gsim}{\lower.7ex\hbox{$
+\;\stackrel{\textstyle>}{\sim}\;$}}
+\newcommand{\lsim}{\lower.7ex\hbox{$
+\;\stackrel{\textstyle<}{\sim}\;$}}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+%%%%%%%%%%%%%
+%%%%%%%%%%%
+%% common definitions
+\def\stackunder#1#2{\mathrel{\mathop{#2}\limits_{#1}}}
+\def\beqn{\begin{eqnarray}}
+\def\eeqn{\end{eqnarray}}
+\def\nn{\nonumber}
+\def\baselinestretch{1.1}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\ba{\beq\new\begin{array}{c}}
+\def\ea{\end{array}\eeq}
+\def\be{\ba}
+\def\ee{\ea}
+\def\stackreb#1#2{\mathrel{\mathop{#2}\limits_{#1}}}
+\def\Tr{{\rm Tr}}
+%\newcommand{\gsim}{\lower.7ex\hbox{$\;\stackrel{\textstyle>}{\sim}\;$}}
+% \newcommand{\lsim}{\lower.7ex\hbox{$
+%\;\stackrel{\textstyle<}{\sim}\;$}}
+%\newcommand{\nfour}{${\mathcal N}=4$ }
+%\newcommand{\ntwo}{${\mathcal N}=2$ }
+\newcommand{\ntwon}{${\mathcal N}=2$}
+\newcommand{\ntwot}{${\mathcal N}= \left(2,2\right) $ }
+\newcommand{\ntwoo}{${\mathcal N}= \left(0,2\right) $ }
+%\newcommand{\none}{${\mathcal N}=1$ }
+\newcommand{\nonen}{${\mathcal N}=1$}
+%\newcommand{\vp}{\varphi}
+%\newcommand{\pt}{\partial}
+%\newcommand{\ve}{\varepsilon}
+%\newcommand{\gs}{g^{2}}
+%\newcommand{\qt}{\tilde q}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+%%
+\newcommand{\p}{\partial}
+\newcommand{\wt}{\widetilde}
+\newcommand{\ov}{\overline}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\md}{\mathcal{D}}
+
+\newcommand{\GeV}{{\rm GeV}}
+\newcommand{\eV}{{\rm eV}}
+\newcommand{\Heff}{{\mathcal{H}_{\rm eff}}}
+\newcommand{\Leff}{{\mathcal{L}_{\rm eff}}}
+\newcommand{\el}{{\rm EM}}
+\newcommand{\uflavor}{\mathbf{1}_{\rm flavor}}
+\newcommand{\lgr}{\left\lgroup}
+\newcommand{\rgr}{\right\rgroup}
+
+\newcommand{\Mpl}{M_{\rm Pl}}
+\newcommand{\suc}{{{\rm SU}_{\rm C}(3)}}
+\newcommand{\sul}{{{\rm SU}_{\rm L}(2)}}
+\newcommand{\sutw}{{\rm SU}(2)}
+\newcommand{\suth}{{\rm SU}(3)}
+\newcommand{\ue}{{\rm U}(1)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Slash character...
+\def\slashed#1{\setbox0=\hbox{$#1$}             % set a box for #1
+   \dimen0=\wd0                                 % and get its size
+   \setbox1=\hbox{/} \dimen1=\wd1               % get size of /
+   \ifdim\dimen0>\dimen1                        % #1 is bigger
+      \rlap{\hbox to \dimen0{\hfil/\hfil}}      % so center / in box
+      #1                                        % and print #1
+   \else                                        % / is bigger
+      \rlap{\hbox to \dimen1{\hfil$#1$\hfil}}   % so center #1
+      /                                         % and print /
+   \fi}                                        %
+
+%%EXAMPLE:  $\slashed{E}$ or $\slashed{E}_{t}$
+
+%%
+
+\newcommand{\LN}{\Lambda_\text{SU($N$)}}
+\newcommand{\sunu}{{\rm SU($N$) $\times$ U(1) }}
+\newcommand{\sunun}{{\rm SU($N$) $\times$ U(1)}}
+\def\cfl {$\text{SU($N$)}_{\rm C+F}$ }
+\def\cfln {$\text{SU($N$)}_{\rm C+F}$}
+\newcommand{\mUp}{m_{\rm U(1)}^{+}}
+\newcommand{\mUm}{m_{\rm U(1)}^{-}}
+\newcommand{\mNp}{m_\text{SU($N$)}^{+}}
+\newcommand{\mNm}{m_\text{SU($N$)}^{-}}
+\newcommand{\AU}{\mc{A}^{\rm U(1)}}
+\newcommand{\AN}{\mc{A}^\text{SU($N$)}}
+\newcommand{\aU}{a^{\rm U(1)}}
+\newcommand{\aN}{a^\text{SU($N$)}}
+\newcommand{\baU}{\ov{a}{}^{\rm U(1)}}
+\newcommand{\baN}{\ov{a}{}^\text{SU($N$)}}
+\newcommand{\lU}{\lambda^{\rm U(1)}}
+\newcommand{\lN}{\lambda^\text{SU($N$)}}
+%\newcommand{\Tr}{{\rm Tr\,}}
+\newcommand{\bxir}{\ov{\xi}{}_R}
+\newcommand{\bxil}{\ov{\xi}{}_L}
+\newcommand{\xir}{\xi_R}
+\newcommand{\xil}{\xi_L}
+\newcommand{\bzl}{\ov{\zeta}{}_L}
+\newcommand{\bzr}{\ov{\zeta}{}_R}
+\newcommand{\zr}{\zeta_R}
+\newcommand{\zl}{\zeta_L}
+\newcommand{\nbar}{\ov{n}}
+
+\newcommand{\CPC}{CP$^{N-1}$)$\times$C }
+\newcommand{\CPCn}{CP$^{N-1}$)$\times$C}
+
+\newcommand{\lar}{\lambda_R}
+\newcommand{\lal}{\lambda_L}
+\newcommand{\larl}{\lambda_{R,L}}
+\newcommand{\lalr}{\lambda_{L,R}}
+\newcommand{\bla}{\ov{\lambda}}
+\newcommand{\blar}{\ov{\lambda}{}_R}
+\newcommand{\blal}{\ov{\lambda}{}_L}
+\newcommand{\blarl}{\ov{\lambda}{}_{R,L}}
+\newcommand{\blalr}{\ov{\lambda}{}_{L,R}}
+
+\newcommand{\bgamma}{\ov{\gamma}}
+\newcommand{\bpsi}{\ov{\psi}{}}
+\newcommand{\bphi}{\ov{\phi}{}}
+\newcommand{\bxi}{\ov{\xi}{}}
+
+\newcommand{\ff}{\mc{F}}
+\newcommand{\bff}{\ov{\mc{F}}}
+
+\newcommand{\eer}{\epsilon_R}
+\newcommand{\eel}{\epsilon_L}
+\newcommand{\eerl}{\epsilon_{R,L}}
+\newcommand{\eelr}{\epsilon_{L,R}}
+\newcommand{\beer}{\ov{\epsilon}{}_R}
+\newcommand{\beel}{\ov{\epsilon}{}_L}
+\newcommand{\beerl}{\ov{\epsilon}{}_{R,L}}
+\newcommand{\beelr}{\ov{\epsilon}{}_{L,R}}
+
+\newcommand{\bi}{{\bar \imath}}
+\newcommand{\bj}{{\bar \jmath}}
+\newcommand{\bk}{{\bar k}}
+\newcommand{\bl}{{\bar l}}
+\newcommand{\bmm}{{\bar m}}
+\newcommand{\bp}{{\bar p}}
+\newcommand{\bkk}{{\bar k}}
+\newcommand{\br}{{\bar r}}
+
+\newcommand{\nz}{{n^{(0)}}}
+\newcommand{\no}{{n^{(1)}}}
+\newcommand{\bnz}{{\ov{n}{}^{(0)}}}
+\newcommand{\bno}{{\ov{n}{}^{(1)}}}
+\newcommand{\Dz}{{D^{(0)}}}
+\newcommand{\Do}{{D^{(1)}}}
+\newcommand{\bDz}{{\ov{D}{}^{(0)}}}
+\newcommand{\bDo}{{\ov{D}{}^{(1)}}}
+\newcommand{\sigz}{{\sigma^{(0)}}}
+\newcommand{\sigo}{{\sigma^{(1)}}}
+\newcommand{\bsigz}{{\ov{\sigma}{}^{(0)}}}
+\newcommand{\bsigo}{{\ov{\sigma}{}^{(1)}}}
+
+\newcommand{\rrenz}{{r_\text{ren}^{(0)}}}
+\newcommand{\bren}{{\beta_\text{ren}}}
+
+\newcommand{\mbps}{m_{\text{\tiny BPS}}}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\bM}{\ov{\mathcal{M}}{}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\bQ}{\ov{\mathcal{Q}}{}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\hsigma}{{\hat{\sigma}}}
+\newcommand{\V}{\mathcal{V}}
